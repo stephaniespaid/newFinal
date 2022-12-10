@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Montserrat:wght@300&family=Zen+Dots&display=swap');
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+/**********************All PAGES********************/
+.top {background: url("images/top.png");
+    /* background-size: contain; */
+    height: 300px;
+    width: 800px;
+
+}
+h1 {
+    font-family: 'Zen Dots', cursive;
+        font-size: 50px;
+        position: relative;
+        top:15%;
+        left: 26%;
+        /* display:flex;
+        align-content:flex-end */   
+}
+
+.bottom-other {background: url("images/bottom.png");
+    height: 300px;
+    width: 800px;
+
+}
+
+/**********************HOME PAGE********************/
+
+h2 {font-family: 'Montserrat', sans-serif;
+    position: relative;
+        left: 18%;
+        top:15%;
+    /* display: flex;
+    justify-content: center; */
+}
+.middle {background: url("images/middle.png");
+    height: 600px;
+    width: 800px;
+}
+.form-position {
+    position: relative;
+    top: 20%; 
+    display: flex;
+    /* align-items: space-around; */
+    justify-content: space-around; 
+}
+.buttons-home {
+    background-color: rgb(253, 253, 253) ;
+    color:rgb(75, 61, 22);
+    border: none;
+    padding: 15px 32px;
+    /* margin-top: 25px; */
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+
+.bottom {background: url("images/bottom\ with\ logo.png") ;
+    /* background-size: contain; */
+    height: 300px;
+    width: 800px;
+
+}
+/*********************PERSONAL PAGE****************************/
+.goat {
+    position: relative;
+    top: 8%;
+    left: 70%;
+}
+
+p {font-family: 'Montserrat', sans-serif;
+    color: white;
+    position: relative;
+    left: 10%;
+}
+.icon {
+    display:flex;
+    
+    
+}
+
+/***********************For Tablet****************************/
+@media screen and (min-width: 481px) and (max-width: 768px){
+.top  {background: url("images/top.png") no-repeat;
+        width: 90%;
+        background-size: contain;
+        position: relative;
+         }
+    h1 {font-family: 'Zen Dots', cursive;
+        font-size: 30px;
+        position: relative;
+        top:10%;
+        left: 26%;
+        }
+    h2 {font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        position: relative;
+        left: 17%;
+        top:10%; 
+        }
+.middle {
+    width: 90%;
+        background-size: contain;
+}
+
+.bottom {background: url("images/bottom\ with\ logo.png") ;
+    width: 90%;
+    background-size: contain;
+}
+
+    .bottom-other {background: url("images/bottom.png") ;
+        width: 90%;
+        background-size: contain;
+    }
+}
+
+/**************************For Iphone******************************/
+@media screen and (max-width: 480px){
+    .top  {background: url("images/top.png") no-repeat;
+        width: 85%;
+        background-size: contain;
+        position: relative;
+         }
+    h1 {font-family: 'Zen Dots', cursive;
+        font-size: 20px;
+        position: relative;
+        top:5%;
+        left: 26%;
+        }
+    h2 {font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        position: relative;
+        left: 17%;
+        top:5%; 
+        }
+.middle {
+    width: 85%;
+        background-size: contain;
+}
+
+.bottom {background: url("images/bottom\ with\ logo.png") ;
+    width: 85%;
+    background-size: contain;
+} 
+
+.bottom-other {background: url("images/bottom.png") ;
+    width: 85%;
+    background-size: contain;
+}
+}
