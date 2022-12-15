@@ -14,10 +14,7 @@
     align-items: space-around;
 
 }
-.text-box {
-    
 
-}
 h1 {
     font-family: 'Zen Dots', cursive;
         font-size: 62px;
@@ -28,6 +25,23 @@ h1 {
     background-size: stretch;
     height: 300px;
     width: 100%;
+}
+
+
+.icon-box {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.middle-goat {
+    background: url("images/4goats1440.png")no-repeat local top center;
+    background-size: stretch;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: space-around;
 
 }
 
@@ -35,8 +49,6 @@ h1 {
 
 h2 {
     font-family: 'Montserrat', sans-serif;
-    
-
 }
 .middle {
     background: url("images/middle-1440.png")no-repeat local top center;
@@ -58,6 +70,7 @@ h2 {
     align-items: center;
     justify-content: space-around; 
 }
+
 .buttons-home {
     background-color: rgb(253, 253, 253) ;
     color:rgb(75, 61, 22);
@@ -75,50 +88,226 @@ h2 {
     width: 100%;
 }
 
-/*********************PERSONAL PAGE****************************/
-.goat {
-    position: relative;
-    top: 8%;
-    left: 70%;
+/*********************OTHERPAGES****************************/
+img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+.chat-box {
+    width: 100%;
+    display:flex;
+    justify-content:center;
 }
 
-p {font-family: 'Montserrat', sans-serif;
-    color: white;
-    position: relative;
-    left: 10%;
+.converstaion-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
-.icon {
+
+.single-convo-box {
+    margin-top: 20px;
+}
+.chat-bar-box {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+}
+
+.single-box {
+    margin-top: 50px;
+}
+
+.calendar-box {
+    width: 100%;
     display:flex;
+    justify-content:space-around;
+}
+
+.solo-cal-box {
+    margin-top: 45px;
+    width: 450px;
+}
+
+.goat-box {
+    width: 100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    
+}
+
+.single-goat-box {
+    margin-right: 50px;
+}
+
+
+
+/*************************In between size***************/
+@media screen and (min-width: 769px) and (max-width: 950px){
+
+.calendar-box {
+        width: 70%;
+        display:flex;
+        /* flex-direction: column; */
+        align-items: center;
+    }
+
+    .solo-cal-box {
+        margin-top: 1px;
+        width: 60%;
+    }
+
+    .middle-goat {
+        background: url("images/4goats768.png")no-repeat local top center;
+        background-size: stretch;
     
     
 }
+
+}
+
+
 
 /***********************For Tablet****************************/
-@media screen and (min-width: 481px) and (max-width: 768px){
+@media screen and (min-width: 593px) and (max-width: 768px){
+    
+    .middle-goat {
+        background: url("images/4goats768.png")no-repeat local top center;
+        background-size: stretch;
+        }
+    
     h1 {
         font-family: 'Zen Dots', cursive;
-            font-size: 52px;
-              
+            font-size: 52px;          
     }
     h2 {
         font-family: 'Montserrat', sans-serif;
         font-size: 16px;
-        
-    
     }
+
+    .icon {
+        width: 100px;
+    }
+    .goat-box {
+        width: 100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+     .single-goat-box,  {
+        display: flex;
+
+    }
+
+}
+
+/*************************In between size***************/
+@media screen and (min-width: 481px) and (max-width: 592px){
+    .calendar-box {
+        width: 80%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .solo-cal-box {
+        margin-top: 1px;
+        width: 60%;
+    }
+    .goat-box {
+        width: 100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .single-goat-box, .single-goat-box-bottom {
+        margin-top: 1px;
+        width: 60%;
+    }
+
+    .middle-goat {
+        background: url("images/4goats768.png")no-repeat local top center;
+        background-size: stretch;
+
+    }
+
 }
 
 /**************************For Iphone******************************/
 @media screen and (max-width: 480px){
     h1 {
         font-family: 'Zen Dots', cursive;
-            font-size: 42px;
-              
+            font-size: 42px;          
     }
     h2 {
         font-family: 'Montserrat', sans-serif;
         font-size: 14px
-        
+    }
     
-    }  
+    /***********personalpage*********/
+    .middle-goat {
+        background: url("images/4goats480.png")no-repeat local top center;
+        background-size: stretch;
+
+    }
+    .middle {
+        display: flex;
+        justify-content: center;
+       
+    }
+    
+
+    .chat-box {
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chats-box {
+        width: 300px;
+          
+    }
+
+    .icon {
+        width: 90px;
+    }
+
+    .converstaion-box {
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .single-convo-box {
+        width: 300px;
+        margin-top: 5px;
+    }
+
+    .calendar-box {
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .solo-cal-box {
+        margin-top: 1px;
+        width: 60%;
+    }
+
+    .single-goat-box, .single-goat-box-bottom {
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* .single-goat-box-bottom {
+        display: flex;
+        align-items: flex-end;
+    } */
 } 
